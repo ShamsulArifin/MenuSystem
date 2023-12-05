@@ -84,5 +84,6 @@ protected:
 
 private:
 	FOnCreateSessionCompleteDelegate CreateSessionCompleteDelegate;
+	
 };
 
