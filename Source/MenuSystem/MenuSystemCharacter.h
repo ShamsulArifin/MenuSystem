@@ -76,7 +76,7 @@ public:
 
 public:
 	//Pointer to the online session interface
-	TSharedPtr<class IOnlineSession, ESPMode::ThreadSafe> OnlineSessionInterface;
+	IOnlineSessionPtr OnlineSessionInterface;
 
 protected:
 	UFUNCTION(BlueprintCallable)
