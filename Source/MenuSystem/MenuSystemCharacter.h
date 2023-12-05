@@ -82,6 +82,8 @@ protected:
 	UFUNCTION(BlueprintCallable)
 	void CreateGameSession();
 
+	void OnCreateSessionComplete(FName SessionName, bool bWasSuccessful);
+
 private:
 	FOnCreateSessionCompleteDelegate CreateSessionCompleteDelegate;
 	
