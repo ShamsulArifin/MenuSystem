@@ -73,6 +73,6 @@ public:
 
 public:
 	//Pointer to the online session interface
-	IOnlineSessionPtr OnlineSessionInterface;
+	TSharedPtr<class IOnlineSession, ESPMode::ThreadSafe> OnlineSessionInterface;
 };
 
