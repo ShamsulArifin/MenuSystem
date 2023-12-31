@@ -11,6 +11,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "InputActionValue.h"
 #include "OnlineSubsystem.h"
+#include "Interfaces/OnlineSessionInterface.h"
 #include "OnlineSessionSettings.h"
 
 DEFINE_LOG_CATEGORY(LogTemplateCharacter);
@@ -60,7 +61,6 @@ AMenuSystemCharacter::AMenuSystemCharacter():
 	if (OnlineSubsystem)
 	{
 		OnlineSessionInterface = OnlineSubsystem->GetSessionInterface();
-
 		if(GEngine)
 		{
 			GEngine->AddOnScreenDebugMessage(
@@ -70,7 +70,6 @@ AMenuSystemCharacter::AMenuSystemCharacter():
 				FString::Printf(TEXT("Found Subsystem %s"), *OnlineSubsystem->GetSubsystemName().ToString())
 				);
 		}
-		
 	}
 	
 }
@@ -113,6 +112,7 @@ void AMenuSystemCharacter::CreateGameSession()
 	SessionSettings->bAllowJoinViaPresence = true;
 	SessionSettings->bShouldAdvertise = true;
 	SessionSettings->bUsesPresence = true;
+	SessionSettings->bUseLobbiesIfAvailable = true;
 	const ULocalPlayer* LocalPlayer = GetWorld()->GetFirstLocalPlayerFromController();
 	OnlineSessionInterface->CreateSession(*LocalPlayer->GetPreferredUniqueNetId(), NAME_GameSession, *SessionSettings);
 }
