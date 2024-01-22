@@ -34,6 +34,18 @@
 			"Type": "RequiredResource"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/QuadsSessions/Binaries/Win64/UnrealEditor-QuadsSessions.dll",
+			"Type": "DynamicLibrary"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/QuadsSessions/Binaries/Win64/UnrealEditor-QuadsSessions.pdb",
+			"Type": "SymbolFile"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/QuadsSessions/Binaries/Win64/UnrealEditor.modules",
+			"Type": "RequiredResource"
+		},
+		{
 			"Path": "$(EngineDir)/Binaries/Win64/AgentInterface.dll",
 			"Type": "DynamicLibrary"
 		},
@@ -3569,6 +3581,10 @@
 	"RuntimeDependencies": [
 		{
 			"Path": "$(ProjectDir)/MenuSystem.uproject",
+			"Type": "UFS"
+		},
+		{
+			"Path": "$(ProjectDir)/Plugins/QuadsSessions/QuadsSessions.uplugin",
 			"Type": "UFS"
 		},
 		{
