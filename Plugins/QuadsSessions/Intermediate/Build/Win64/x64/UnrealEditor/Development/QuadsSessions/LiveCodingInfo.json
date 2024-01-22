@@ -1,0 +1,8 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.QuadsSessions.cpp.obj": [
+			"QuadsSessions.cpp.obj"
+		]
+	}
+}

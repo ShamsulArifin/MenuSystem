@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "f:\\projects\\menusystem\\plugins\\quadssessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\quadssessions\\module.quadssessions.cpp",
+        "ProvidedModule": "",
+        "PCH": "f:\\projects\\menusystem\\intermediate\\build\\win64\\x64\\menusystemeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "f:\\projects\\menusystem\\plugins\\quadssessions\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\quadssessions\\definitions.quadssessions.h",
+            "f:\\projects\\menusystem\\plugins\\quadssessions\\source\\quadssessions\\private\\quadssessions.cpp",
+            "f:\\projects\\menusystem\\plugins\\quadssessions\\source\\quadssessions\\public\\quadssessions.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
