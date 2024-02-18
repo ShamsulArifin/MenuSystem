@@ -2,7 +2,10 @@
 	"RemapUnityFiles": 
 	{
 		"Module.QuadsSessions.cpp.obj": [
-			"QuadsSessions.cpp.obj"
+			"QuadsSessions.cpp.obj",
+			"MultipalyerSessionsSubsystem.gen.cpp.obj",
+			"QuadsSessions.init.gen.cpp.obj",
+			"MultipalyerSessionsSubsystem.cpp.obj"
 		]
 	}
 }
