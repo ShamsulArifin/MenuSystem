@@ -17,13 +17,13 @@ void EmptyLinkFunctionForGeneratedCodeQuadsSessions_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xF444F8F4,
-				0xA46FBB9B,
+				0x6D21582B,
+				0xC036CB4A,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_QuadsSessions.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_QuadsSessions.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_QuadsSessions(Z_Construct_UPackage__Script_QuadsSessions, TEXT("/Script/QuadsSessions"), Z_Registration_Info_UPackage__Script_QuadsSessions, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xF444F8F4, 0xA46FBB9B));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_QuadsSessions(Z_Construct_UPackage__Script_QuadsSessions, TEXT("/Script/QuadsSessions"), Z_Registration_Info_UPackage__Script_QuadsSessions, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6D21582B, 0xC036CB4A));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
