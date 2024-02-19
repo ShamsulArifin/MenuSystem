@@ -4,6 +4,7 @@
 #include "Menu.h"
 
 #include "Components/Button.h"
+#include "MultipalyerSessionsSubsystem.h"
 
 void UMenu::MenuSetup()
 {
@@ -23,6 +24,12 @@ void UMenu::MenuSetup()
 			PlayerController->SetInputMode(InputModeData);
 			PlayerController->SetShowMouseCursor(true);
 		}
+	}
+
+	UGameInstance* GameInstance = GetGameInstance();
+	if(GameInstance)
+	{
+		MultipalyerSessionsSubsystem = GameInstance->GetSubsystem<UMultipalyerSessionsSubsystem>();
 	}
 }
 
@@ -56,6 +63,11 @@ void UMenu::HostButtonClicked()
 		FColor::Yellow,
 		FString(TEXT("Host Button Clicked"))
 		);
+	}
+
+	if(MultipalyerSessionsSubsystem)
+	{
+		MultipalyerSessionsSubsystem->CreateSession(4, FString{"FreeForAll"});
 	}
 }
 

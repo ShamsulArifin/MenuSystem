@@ -33,4 +33,8 @@ private:
 
 	UFUNCTION()
 	void JoinButtonClicked();
+
+	// The subsystem designed to handle all online session functionality
+	class UMultipalyerSessionsSubsystem* MultipalyerSessionsSubsystem;
+	
 };
