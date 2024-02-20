@@ -68,6 +68,11 @@ void UMenu::HostButtonClicked()
 	if(MultipalyerSessionsSubsystem)
 	{
 		MultipalyerSessionsSubsystem->CreateSession(4, FString{"FreeForAll"});
+		UWorld* World = GetWorld();
+		if(World)
+		{
+			World->ServerTravel("/Game/ThirdPerson/Maps/Lobby?listen");
+		}
 	}
 }
 

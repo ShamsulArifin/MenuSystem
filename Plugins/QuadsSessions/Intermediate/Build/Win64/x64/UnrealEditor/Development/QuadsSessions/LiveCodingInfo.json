@@ -3,11 +3,11 @@
 	{
 		"Module.QuadsSessions.cpp.obj": [
 			"MultipalyerSessionsSubsystem.gen.cpp.obj",
-			"MultipalyerSessionsSubsystem.cpp.obj",
+			"QuadsSessions.init.gen.cpp.obj",
 			"QuadsSessions.cpp.obj",
 			"Menu.gen.cpp.obj",
-			"QuadsSessions.init.gen.cpp.obj",
-			"Menu.cpp.obj"
+			"Menu.cpp.obj",
+			"MultipalyerSessionsSubsystem.cpp.obj"
 		]
 	}
 }
